@@ -1,345 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Francisco Chen Personal Profile Website</title>
-  <meta name="description" content="Francisco Chen's personal profile website. Student at Northeastern University.">
-  <meta name="keywords" content="Francisco Chen, Northeastern University, Student, Portfolio">
+  <title>Francisco Chen</title>
+  <meta name="description" content="Francisco Chen — CE & CS Student at Northeastern University. Building at the intersection of hardware and software.">
+  <meta name="keywords" content="Francisco Chen, Northeastern University, Computer Engineering, Computer Science">
   <meta name="author" content="Francisco Chen">
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
+
   <!-- Header -->
   <header class="header">
-    <a href="#" class="logo">Francisco.</a>
+    <a href="#" class="logo">FC.</a>
     <nav class="navbar">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-    
     </nav>
-    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
       <i class='bx bx-moon'></i>
     </button>
-
   </header>
 
-  <!-- Home Section -->
+  <!-- Hero -->
   <section class="home" id="home">
     <div class="home-content">
       <div class="text-content">
-        <h1>Hello!<br>I'm <span>Francisco Chen</span></h1>
-        <div class="text-animate">
-          <h3>CE&CS Student at Northeastern University</h3>
+        <p class="greeting">Hi there, I'm</p>
+        <h1>Francisco<br><span>Chen</span></h1>
+        <p class="role">CE &amp; CS Student &middot; Northeastern University</p>
+        <p class="tagline">Building at the intersection of hardware and software.</p>
+        <div class="home-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
-        <a href="#about" class="btn">Get Start to Know About Me!</a>
+        <div class="social-links">
+          <a href="https://github.com/franciscochen435" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a href="mailto:chen.fra@northeastern.edu" aria-label="Email">
+            <i class='bx bxs-envelope'></i>
+          </a>
+        </div>
       </div>
       <div class="image-container">
         <img src="IMG_7320.jpeg" alt="Francisco Chen" class="home-img">
       </div>
     </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <i class='bx bx-chevron-down'></i>
+    </a>
   </section>
 
-  <!-- About Section -->
+  <!-- About -->
   <section class="about" id="about">
-    <h2 class="heading">About <span>Me</span></h2>
+    <div class="section-header">
+      <span class="section-tag">About</span>
+      <h2 class="heading">Who Am <span>I?</span></h2>
+    </div>
     <div class="about-content">
-      <!-- Images -->
-      <div class="image-row">
-        <img src="IMG_3229.jpeg" alt="Image 1" class="enlargeable">
-        <img src="IMG_3884.jpeg" alt="Image 2" class="enlargeable">
-        <img src="IMG_6255.jpeg" alt="Image 3" class="enlargeable">
-        <img src="IMG_0576.jpeg" alt="Image 4" class="enlargeable">
+      <div class="about-text">
+        <p>I'm a Computer Engineering and Computer Science student at Northeastern University with hands-on experience in circuit design, embedded systems, and software development.</p>
+        <p>My projects span from FPGA processors and ECG circuits to AI agents and Java-based games — built with OOP, MVC architecture, reinforcement learning, and SystemVerilog.</p>
+        <p>I've grown through coursework and self-study, teaching myself web development to build this site. During Co-op, I aim to apply my technical knowledge to real-world challenges while continuing to grow as a problem-solver and collaborator.</p>
+        <p>Outside of academics, I enjoy tennis, football, and capturing moments from my travels — some of which are shown here.</p>
       </div>
-      <!-- Paragraph -->
-      <p>I'm a Computer Engineering and Computer Science student at Northeastern University with hands-on experience
-         in circuit design, embedded systems, and software development. My projects include a reaction arcade, smart lock, ECG
-         an FPGA-based processor, and Java-based games built with OOP and MVC architecture.
-      <br>I’ve strengthened my skills in C++, Python, Java, and self-taught web development to build this website.
-       During Co-op, I aim to apply my technical knowledge to real-world challenges while continuing to grow as a problem-solver
-        and collaborator. I also enjoy tennis, football, and capturing moments from my travels — some of which are shown above.
-    
-      <br>I like playing tennis and football, and I am also keen on traveling and recording my life (the above photos were taken during my travels)</p>
+      <div class="about-gallery">
+        <div class="image-grid">
+          <img src="IMG_3229.jpeg" alt="Travel photo" class="enlargeable">
+          <img src="IMG_3884.jpeg" alt="Travel photo" class="enlargeable">
+          <img src="IMG_6255.jpeg" alt="Travel photo" class="enlargeable">
+          <img src="IMG_0576.jpeg" alt="Travel photo" class="enlargeable">
+        </div>
       </div>
-    <a href="#skills" class="btn">More About Skills</a>
+    </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills -->
   <section class="skills" id="skills">
-    <h2 class="heading">My <span>Skills</span></h2>
-    <div class="skills-container">
-      <!-- First Axis: Programming Languages -->
-      <div class="skill-axis">
-        <div class="axis-label">Programming Language</div>
-        <div class="axis-bar">
-          <div class="axis-gradient"></div>
+    <div class="section-header">
+      <span class="section-tag">Skills</span>
+      <h2 class="heading">My <span>Toolkit</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card-header">
+          <i class='bx bx-code-alt'></i>
+          <h3>Programming Languages</h3>
         </div>
-        <div class="axis-items">
-          <span>Java</span>
-          <span>Python</span>
-          <span>C++</span>
-          <span>HTML|CSS|JS</span>
-          <span>SystemVerilog</span>
-        </div>
-      </div>
-
-      <!-- Second Axis: Software Tools -->
-      <div class="skill-axis">
-        <div class="axis-label">Software Tools</div>
-        <div class="axis-bar">
-          <div class="axis-gradient"></div>
-        </div>
-        <div class="axis-items">
-          <span>AutoCAD</span>
-          <span>SolidWorks</span>
-          <span>MATLAB</span>
-          <span>LaTex</span>
-          <span>MobaXterm</span>
+        <div class="skill-tags">
+          <span class="tag">Java</span>
+          <span class="tag">Python</span>
+          <span class="tag">C++</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">SystemVerilog</span>
         </div>
       </div>
-
-      <!-- Third Axis: Hardware Tools -->
-      <div class="skill-axis">
-        <div class="axis-label">Hardware Tools</div>
-        <div class="axis-bar">
-          <div class="axis-gradient"></div>
+      <div class="skill-card">
+        <div class="skill-card-header">
+          <i class='bx bx-desktop'></i>
+          <h3>Software Tools</h3>
         </div>
-        <div class="axis-items">
-          <span>Arduino</span>
-          <span>LTSpice</span>
-          <span>Quartus Prime</span>
-          <span>FPGA</span>
+        <div class="skill-tags">
+          <span class="tag">AutoCAD</span>
+          <span class="tag">SolidWorks</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag">LaTeX</span>
+          <span class="tag">MobaXterm</span>
         </div>
       </div>
-
-      <!-- Fourth Axis: Lab Equipments -->
-      <div class="skill-axis">
-        <div class="axis-label">Lab Equipments</div>
-        <div class="axis-bar">
-          <div class="axis-gradient"></div>
+      <div class="skill-card">
+        <div class="skill-card-header">
+          <i class='bx bx-chip'></i>
+          <h3>Hardware Tools</h3>
         </div>
-        <div class="axis-items">
-          <span>Digital Multimeter</span>
-          <span>Function Generator</span>
-          <span>Oscilloscope</span>
+        <div class="skill-tags">
+          <span class="tag">Arduino</span>
+          <span class="tag">LTSpice</span>
+          <span class="tag">Quartus Prime</span>
+          <span class="tag">FPGA</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-header">
+          <i class='bx bx-wrench'></i>
+          <h3>Lab Equipment</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">Digital Multimeter</span>
+          <span class="tag">Function Generator</span>
+          <span class="tag">Oscilloscope</span>
         </div>
       </div>
     </div>
-
-    <a href="#projects" class="btn">Projects by Using Such Skills</a>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects -->
   <section class="projects" id="projects">
-    <h2 class="heading">My<span>Projetcs</span></h2>
+    <div class="section-header">
+      <span class="section-tag">Work</span>
+      <h2 class="heading">My <span>Projects</span></h2>
+    </div>
 
-    <div class="project-row">
-      <div class="project-col">
-        <h3 class="title">Programming Projetcs</h3> 
+    <div class="projects-tabs">
+      <button class="tab-btn active" data-tab="programming">Programming</button>
+      <button class="tab-btn" data-tab="engineering">Engineering</button>
+    </div>
 
-        <div class="project-box">
-        <div class="project-content">
-            <div class="content">
-              <div class="year"><i class="bx bxs-calendar"></i>Oct -- Dec 2025</div>
-                <h3>Campus Navigation AI Agent Using Reinforcement Learning</h3>
-                <p> Modeled a campus-scale navigation problem as a high-dimensional Markov Decision Process (88K+ discrete states), 
-                  incorporating stochastic weather conditions, crowd density, and hierarchical routing (surface vs. underground tunnel).
-                  <br> Designed and implemented a modular, OpenAI Gym-compatible simulation environment supporting configurable transition dynamics 
-                  and reward components.
-                  <br> Developed an ε-greedy Q-learning agent with adaptive exploration decay to balance exploration–exploitation trade-offs.
-                  <br> Trained the agent over 1M episodes and monitored convergence via cumulative reward trends and policy stability analysis.
-                  <br> Benchmarked performance against shortest-path and random-walk baselines, achieving ~6.5-step average goal completion with emergent
-                  weather-aware tunnel selection behavior.
-                  <br> <a href="https://drive.google.com/file/d/1BTLLUSY5t8nnFlYZQh9PGB66RKwEGrxT/view">More details in Lab report </a>
-                </p>
-            </div> 
-          </div>
-
-        
-          <div class="project-content">
-            <div class="content">
-              <div class="year"><i class="bx bxs-calendar"></i> Feb -- Apr 2025</div>
-                <h3>Pawns Board</h3>
-                <p> Built a two-player board game in Java using MVC architecture and Swing GUI, with synchronized dual-player views.
-                  <br> Implemented AI opponents with configurable behaviors using the Strategy Pattern for flexible gameplay.
-                  <br> Enhanced accessibility through a high-contrast mode, applying the Strategy Pattern for customizable rendering.
-                  <br> Employed Observer and Adapter Patterns to improve modularity and support future extensions.
-                  <br> <a href='https://github.com/franciscochen435/PawnsBoard'>More details of Code</a>
-                
-                </p>
-            </div> 
-          </div>
-
-          <div class="project-content">
-            <div class="content">
-              <div class="year"><i class="bx bxs-calendar"></i> Dec 2024 -- present</div>
-                <h3>Personal Profile Website</h3>
-                <p> Self-learned HTML, CSS, and JavaScript to design and develop a fully responsive personal website.
-                  <br> Styled and structured content sections including About, Skills, Projects, and Contact using custom CSS variables.
-                  <br> Integrated interactive features such as image enlargement, scroll-based navigation, and animated button effects.
-                  <br> Implemented a dark/light mode toggle with system preference detection and manual override using localStorage.
-                
-                </p>
-            </div> 
-          </div>
-          <div class="project-content">
-            <div class="content">
-              <div class="year"><i class="bx bxs-calendar"></i> Jan -- Feb 2025</div>
-                <h3>Poker Polygons Game</h3>
-                <p> Developed a Poker Polygons Game using Object-Oriented Programming and MVC architecture.
-                  <br> Structured the game in MVC Pattern, with the Model handling game logic, the View managing user interactions, and the
-                  Controller coordinating game flow.
-                  <br> Implemented JUnit tests to validate LooseTriangle mechanics, scoring rules, and overall game functionality.
-                  <br> Utilized the Builder Pattern for flexible polygon models creation and the Command Pattern to support user actions and undo
-                  functionality.
-                  <br> <a href='https://github.com/franciscochen435/PokerPolygons'>More details of Code</a>
-                </p>
-            </div> 
-          </div>
-          <div class="project-content">
-            <div class="content">
-              <div class="year"><i class="bx bxs-calendar"></i> Sept -- Dec 2024</div>
-                <h3>Concentration Card Game</h3>
-                <p> Built a Java-based Concentration (Memory) game using Object-Oriented Programming and Java World library for GUI.
-                  <br> Designed a 4x13 card grid with shuffle logic, score tracking, and timer functionality to enhance engagement and challenge.
-                  <br>  Implemented card flipping, match detection, and reset features for seamless gameplay.
-                  <br> Conducted unit tests to validate game mechanics, ensuring smooth functionality and user interaction.
-                  <br> <a href='https://github.com/franciscochen435/ConcentrationCardGame'>More details of Code (need request)</a>
-                </p>
-            </div> 
-          </div>
-          <div class="project-content">
-            <div class="content">
-              <div class="year"><i class="bx bxs-calendar"></i> Sept -- Dec 2024</div>
-                <h3>Bridglt Pathfinding Game</h3>
-                <p> Developed a Java-based strategic board game using Object-Oriented Programming and Java World library for GUI.
-                  <br> Designed an 11x11 grid with alternating colored cells, enabling players to connect paths for pink and magenta teams.
-                  <br> Implemented pathfinding algorithms to determine winning conditions and dynamic cell linking for neighbor awareness.
-                  <br> Conducted unit tests to validate game mechanics, cell interactions, and win conditions.
-                  <br> <a href='https://github.com/franciscochen435/BridgltGame'>More details of Code (need request)</a>
-                </p>
-            </div> 
-          </div>
-
-
+    <div class="projects-grid" id="programming">
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-date"><i class='bx bxs-calendar'></i> Oct – Dec 2025</span>
+          <span class="project-type">AI / ML</span>
+        </div>
+        <h3>Campus Navigation AI Agent</h3>
+        <p>Modeled a campus-scale navigation problem as a Markov Decision Process (88K+ states) with ε-greedy Q-learning over 1M episodes. Achieved ~6.5-step average goal completion with emergent weather-aware tunnel selection behavior.</p>
+        <div class="project-tags">
+          <span>Python</span><span>Reinforcement Learning</span><span>OpenAI Gym</span><span>MDP</span>
+        </div>
+        <div class="project-links">
+          <a href="https://drive.google.com/file/d/1BTLLUSY5t8nnFlYZQh9PGB66RKwEGrxT/view" target="_blank" rel="noopener">
+            <i class='bx bx-file'></i> Lab Report
+          </a>
         </div>
       </div>
 
-      <div class="project-col">
-        <h3 class="title">Engineering Academic Projetcs</h3>
-        <div class="project-box">
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-date"><i class='bx bxs-calendar'></i> Feb – Apr 2025</span>
+          <span class="project-type">Java</span>
+        </div>
+        <h3>Pawns Board Game</h3>
+        <p>Built a two-player board game in Java using MVC architecture and Swing GUI with synchronized dual-player views. Implemented AI opponents using Strategy Pattern, high-contrast accessibility mode, and Observer/Adapter patterns for modularity.</p>
+        <div class="project-tags">
+          <span>Java</span><span>Swing</span><span>MVC</span><span>Design Patterns</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/franciscochen435/PawnsBoard" target="_blank" rel="noopener">
+            <i class='bx bxl-github'></i> Code
+          </a>
+        </div>
+      </div>
 
-          <div class="project-content">
-            <div class="content">
-              <div class="year"><i class="bx bxs-calendar"></i> Sept -- Dec 2025</div>
-                <h3>FPGA-Based RISC Computer Design</h3>
-                <p> Engineered a single-cycle RISC-style processor on FPGA with fully integrated datapath and control logic.
-                  <br> Developed ALU, register file, instruction decoder, branch-capable program counter, and memory interface within a unified clock cycle architecture.
-                  <br> Verified functional correctness using SystemVerilog testbenches and waveform inspection.
-                  <br> Synthesized and deployed the design on a PYNQ FPGA board, validating execution through VIO instrumentation and
-seven-segment output.
-                 
-                </p>
-            </div> 
-          </div>
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-date"><i class='bx bxs-calendar'></i> Jan – Feb 2025</span>
+          <span class="project-type">Java</span>
+        </div>
+        <h3>Poker Polygons Game</h3>
+        <p>Developed a Poker Polygons Game using OOP and MVC architecture. Utilized Builder Pattern for flexible polygon creation and Command Pattern for undo functionality, with JUnit tests validating game mechanics.</p>
+        <div class="project-tags">
+          <span>Java</span><span>MVC</span><span>OOP</span><span>JUnit</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/franciscochen435/PokerPolygons" target="_blank" rel="noopener">
+            <i class='bx bxl-github'></i> Code
+          </a>
+        </div>
+      </div>
 
-          <div class="project-content">
-            <div class="content">
-              <div class="year"><i class="bx bxs-calendar"></i> Jan -- Apr 2024</div>
-                <h3>Embedded Systems Lab - FPGA I/O Control with C++</h3>
-                <p> Wrote C++ programs to read switch/button inputs and control LEDs via memory-mapped I/O on the DE1-SoC FPGA.
-                  <br> Enabled user interaction: LEDs turn on/off, increment/decrement, or shift based on real-time switch and button states.
-                  <br> Applied mmap to map physical memory into user space, then deployed and tested code via MobaXterm on the FPGA board.
-                  <br> Implemented object-oriented design principles to abstract and manage FPGA I/O operations cleanly and efficiently.
-                  <br> <a href='https://drive.google.com/file/d/1BzdfKND_noxm1AF6onJ_4Db05_bxnrJk/view?usp=sharing'>Video</a>
-                </p>
-            </div> 
-          </div>
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-date"><i class='bx bxs-calendar'></i> Dec 2024 – Present</span>
+          <span class="project-type">Web</span>
+        </div>
+        <h3>Personal Profile Website</h3>
+        <p>Self-taught HTML, CSS, and JavaScript to design and develop a fully responsive personal portfolio. Features dark/light mode, scroll animations, image lightbox, and a tab-based project layout.</p>
+        <div class="project-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
 
-          <div class="project-content">
-            <div class="content">
-              <div class="year"><i class="bx bxs-calendar"></i>Sept -- Dec 2024</div>
-                <h3>ECG Signal Acquisition and Processing Project</h3>
-                <p> Developed an ECG circuit that measures electrical activity of the heart with analog and digital filters.
-                  <br> Designed analog filters (low-pass, band-pass) with an instrumentation amplifier to process ECG signals, successfully verified
-                  signal integrity and filter performance using a function generator and oscilloscope.
-                  <br> Processed signal data in MATLAB with advanced filtering and heart rate detection algorithms to visualize and analyze data.
-                  <br> <a href="https://drive.google.com/file/d/1-PZBhr07FPxyXoceo7NR47-8zQYmWzPF/view?usp=share_link">More details in Lab report </a>
-                </p>
-            </div> 
-          </div>
-          <div class="project-content">
-            <div class="content">
-              <div class="year"><i class="bx bxs-calendar"></i> Jan -- Apr 2024</div>
-                <h3>Barrier-Free Smart Lock Project</h3>
-                <p> Developed a tactile-access smart lock for visually impaired users, incorporating distinct button shapes.
-                  <br> Programmed in C++ via Arduino IDE, featuring LED/audio feedback and RFID integration for secure, user-friendly access.
-                  <br> Constructed with 3D-printed components and refined through user testing, ensuring real-world viability in gym
-                  environments.
-                  <br> <a href="https://drive.google.com/file/d/1tETJIUCILXmZG4HLZRr122bk5xPjjBKo/view?usp=share_link">More details in project report</a>
-                  <br> <a href="https://github.com/franciscochen435/SmartLock">More details of code part</a>
-                </p>
-            </div> 
-          </div>
-          <div class="project-content">
-            <div class="content">
-              <div class="year"><i class="bx bxs-calendar"></i> Sept -- Dec 2023</div>
-                <h3>Interactive Arcade Game Project</h3>
-                <p> Designed a two-player arcade game where players compete to catch randomly dropped sticks.
-                  <br> Programmed game mechanics in C++ in Arduino IDE, integrating the SparkFun kit to control five servos, ensuring random rotation and stick drops via inertia.
-                  <br> Presented at the Northeastern Engineering Expo, engaging nearly 100 attendees and receiving positive feedback from College of Engineering instructors.
-                  <br> <a href="https://drive.google.com/file/d/1qSXycMu7VOc_y6uQE1HxghIAvq8PjnGm/view?usp=share_link">More details in project report</a>
-                  <br> <a href="https://drive.google.com/file/d/1VU1Ak8qeI_89dxgrg2T6YF2n27XQI859/view?usp=share_link">Video</a>
-                  <br> <a href="https://github.com/franciscochen435/ReactionArcade">More details of code part</a>
-                </p>
-            </div> 
-          </div>
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-date"><i class='bx bxs-calendar'></i> Sept – Dec 2024</span>
+          <span class="project-type">Java</span>
+        </div>
+        <h3>Concentration Card Game</h3>
+        <p>Built a Java-based Memory game with a 4×13 card grid, shuffle logic, score tracking, and timer functionality using OOP and Java World library for GUI. Unit tested all game mechanics.</p>
+        <div class="project-tags">
+          <span>Java</span><span>OOP</span><span>GUI</span><span>JUnit</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/franciscochen435/ConcentrationCardGame" target="_blank" rel="noopener">
+            <i class='bx bxl-github'></i> Code
+          </a>
+        </div>
+      </div>
 
-
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-date"><i class='bx bxs-calendar'></i> Sept – Dec 2024</span>
+          <span class="project-type">Java</span>
+        </div>
+        <h3>Bridglt Pathfinding Game</h3>
+        <p>Developed a strategic board game on an 11×11 grid with pathfinding algorithms for win detection and dynamic cell linking for neighbor awareness across team paths.</p>
+        <div class="project-tags">
+          <span>Java</span><span>Pathfinding</span><span>OOP</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/franciscochen435/BridgltGame" target="_blank" rel="noopener">
+            <i class='bx bxl-github'></i> Code
+          </a>
         </div>
       </div>
     </div>
 
-    <a href="#contact" class="btn">Contact Me for More Information!</a>
+    <div class="projects-grid hidden" id="engineering">
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-date"><i class='bx bxs-calendar'></i> Sept – Dec 2025</span>
+          <span class="project-type">FPGA</span>
+        </div>
+        <h3>FPGA-Based RISC Computer</h3>
+        <p>Engineered a single-cycle RISC-style processor on FPGA with fully integrated datapath and control logic. Developed ALU, register file, instruction decoder, and branch-capable PC. Verified via SystemVerilog testbenches and deployed on PYNQ board.</p>
+        <div class="project-tags">
+          <span>SystemVerilog</span><span>FPGA</span><span>RISC</span><span>PYNQ</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-date"><i class='bx bxs-calendar'></i> Jan – Apr 2024</span>
+          <span class="project-type">Embedded</span>
+        </div>
+        <h3>FPGA I/O Control with C++</h3>
+        <p>Wrote C++ programs for memory-mapped LED I/O on the DE1-SoC FPGA. Applied mmap to map physical memory into user space and deployed via MobaXterm. OOP principles used to abstract FPGA I/O operations.</p>
+        <div class="project-tags">
+          <span>C++</span><span>FPGA</span><span>Embedded</span><span>mmap</span>
+        </div>
+        <div class="project-links">
+          <a href="https://drive.google.com/file/d/1BzdfKND_noxm1AF6onJ_4Db05_bxnrJk/view?usp=sharing" target="_blank" rel="noopener">
+            <i class='bx bx-play-circle'></i> Video
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-date"><i class='bx bxs-calendar'></i> Sept – Dec 2024</span>
+          <span class="project-type">Circuit</span>
+        </div>
+        <h3>ECG Signal Acquisition</h3>
+        <p>Built an ECG circuit with analog and digital filters using an instrumentation amplifier. Verified signal integrity with oscilloscope and function generator. Processed data in MATLAB with heart rate detection algorithms.</p>
+        <div class="project-tags">
+          <span>Circuit Design</span><span>MATLAB</span><span>Signal Processing</span><span>LTSpice</span>
+        </div>
+        <div class="project-links">
+          <a href="https://drive.google.com/file/d/1-PZBhr07FPxyXoceo7NR47-8zQYmWzPF/view?usp=share_link" target="_blank" rel="noopener">
+            <i class='bx bx-file'></i> Report
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-date"><i class='bx bxs-calendar'></i> Jan – Apr 2024</span>
+          <span class="project-type">Hardware</span>
+        </div>
+        <h3>Barrier-Free Smart Lock</h3>
+        <p>Developed a tactile-access smart lock for visually impaired users with distinct button shapes, C++ logic via Arduino, LED/audio feedback, and RFID integration. Refined through user testing with 3D-printed components.</p>
+        <div class="project-tags">
+          <span>C++</span><span>Arduino</span><span>RFID</span><span>3D Printing</span>
+        </div>
+        <div class="project-links">
+          <a href="https://drive.google.com/file/d/1tETJIUCILXmZG4HLZRr122bk5xPjjBKo/view?usp=share_link" target="_blank" rel="noopener">
+            <i class='bx bx-file'></i> Report
+          </a>
+          <a href="https://github.com/franciscochen435/SmartLock" target="_blank" rel="noopener">
+            <i class='bx bxl-github'></i> Code
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-date"><i class='bx bxs-calendar'></i> Sept – Dec 2023</span>
+          <span class="project-type">Hardware</span>
+        </div>
+        <h3>Interactive Arcade Game</h3>
+        <p>Designed a two-player arcade game in C++ with Arduino, controlling five servos via SparkFun kit for random stick drops. Presented at Northeastern Engineering Expo to nearly 100 attendees.</p>
+        <div class="project-tags">
+          <span>C++</span><span>Arduino</span><span>Servo Control</span><span>SparkFun</span>
+        </div>
+        <div class="project-links">
+          <a href="https://drive.google.com/file/d/1qSXycMu7VOc_y6uQE1HxghIAvq8PjnGm/view?usp=share_link" target="_blank" rel="noopener">
+            <i class='bx bx-file'></i> Report
+          </a>
+          <a href="https://drive.google.com/file/d/1VU1Ak8qeI_89dxgrg2T6YF2n27XQI859/view?usp=share_link" target="_blank" rel="noopener">
+            <i class='bx bx-play-circle'></i> Video
+          </a>
+          <a href="https://github.com/franciscochen435/ReactionArcade" target="_blank" rel="noopener">
+            <i class='bx bxl-github'></i> Code
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact Section -->
-<section class="contact" id="contact">
-  <h2 class="heading">Contact <span>Me</span></h2>
-  <div class="contact-info">
-    <div class="contact-item">
-      <i class='bx bxs-phone'></i>
-      <h3>Phone</h3>
-      <p>+1 (617) 606-1452</p>
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <span class="section-tag">Contact</span>
+      <h2 class="heading">Get in <span>Touch</span></h2>
     </div>
-    <div class="contact-item">
-      <i class='bx bxs-envelope'></i>
-      <h3>Email</h3>
-      <p>chen.fra@northeastern.edu</p>
+    <p class="contact-intro">I'm currently looking for Co-op opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+    <div class="contact-grid">
+      <a href="tel:+16176061452" class="contact-card">
+        <i class='bx bxs-phone'></i>
+        <h3>Phone</h3>
+        <p>+1 (617) 606-1452</p>
+      </a>
+      <a href="mailto:chen.fra@northeastern.edu" class="contact-card">
+        <i class='bx bxs-envelope'></i>
+        <h3>Email</h3>
+        <p>chen.fra@northeastern.edu</p>
+      </a>
+      <a href="https://github.com/franciscochen435" target="_blank" rel="noopener" class="contact-card">
+        <i class='bx bxl-github'></i>
+        <h3>GitHub</h3>
+        <p>franciscochen435</p>
+      </a>
     </div>
-  </div>
-</section>
-
-
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-text">
-      <p>Copyright &copy; 2025 by Francisco Chen | All Rights Reserved.</p>
-    </div>
-    <div class="footer-iconTop">
-      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-    </div>
+    <p class="footer-text">&copy; 2025 Francisco Chen. All rights reserved.</p>
+    <a href="#home" class="footer-top" aria-label="Back to top">
+      <i class='bx bx-up-arrow-alt'></i>
+    </a>
   </footer>
 
   <script src="script.js"></script>
 </body>
-
 </html>
